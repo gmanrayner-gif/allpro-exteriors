@@ -13,8 +13,8 @@ export const BUSINESS = {
   tagline: "Calgary's Trusted Window & Exterior Cleaning Pros",
   description:
     "5-star rated window cleaning, gutter cleaning, and pressure washing services for homes and businesses across Calgary.",
-  googleReviewUrl: "https://www.google.com/search?q=AllPro+Exteriors+Calgary&ludocid=#lrd=,1,",
-  googleMapsUrl: "https://www.google.com/maps/search/AllPro+Exteriors+Calgary",
+  googleReviewUrl: "https://www.google.com/search?q=allpro+exteriors+calgary&oq=all&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzITCAEQLhiDARjHARixAxjRAxiABDITCAIQLhiDARjHARixAxjRAxiABDIGCAMQRRg5MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgxNTUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
+  googleMapsUrl: "https://www.google.com/search?q=allpro+exteriors+calgary&oq=all&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzITCAEQLhiDARjHARixAxjRAxiABDITCAIQLhiDARjHARixAxjRAxiABDIGCAMQRRg5MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgxNTUzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
 };
 
 export const SERVICES = [
