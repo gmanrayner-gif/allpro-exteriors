@@ -91,66 +91,86 @@ export const WHY_CHOOSE = [
   },
 ];
 
+export function timeAgo(dateStr: string): string {
+  const now = new Date();
+  const past = new Date(dateStr);
+  const seconds = Math.floor((now.getTime() - past.getTime()) / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  const weeks = Math.floor(days / 7);
+  const months = Math.floor(days / 30);
+  const years = Math.floor(days / 365);
+
+  if (seconds < 60) return "just now";
+  if (minutes < 60) return `${minutes} minute${minutes !== 1 ? "s" : ""} ago`;
+  if (hours < 24) return `${hours} hour${hours !== 1 ? "s" : ""} ago`;
+  if (days < 7) return `${days} day${days !== 1 ? "s" : ""} ago`;
+  if (weeks < 5) return `${weeks} week${weeks !== 1 ? "s" : ""} ago`;
+  if (months < 12) return `${months} month${months !== 1 ? "s" : ""} ago`;
+  return `${years} year${years !== 1 ? "s" : ""} ago`;
+}
+
 export const REVIEWS = [
   {
     name: "Arthur Spark",
     rating: 5,
     text: "Did an amazing job on my windows would definitely recommend!",
-    date: "18 hours ago",
+    date: "2026-06-07",
   },
   {
     name: "Cam Negrich",
     rating: 5,
     text: "AllPro Exteriors did an amazing job cleaning the windows on our house! Not a streak to be found! The price was extremely fair and actually less expensive than all of the other quotes we received! They performed the cleaning very quickly as well. Highly recommend!",
-    date: "3 days ago",
+    date: "2026-06-05",
   },
   {
     name: "Kelly Negrich",
     rating: 5,
     text: "We used AllPro for our windows and we were impressed with the work done! It is clear that there is a level of pride in the work and customer service.",
-    date: "3 days ago",
+    date: "2026-06-05",
   },
   {
     name: "Robert Craig",
     rating: 5,
     text: "Josh was very conscious of his work, job was completed and cleaned up with great attention to detail. Would definitely recommend him to anyone. Nice to see someone with the work ethic he demonstrated.",
-    date: "1 week ago",
+    date: "2026-06-01",
   },
   {
     name: "Melina Lamb",
     rating: 5,
     text: "Josh was very efficient and prompt. He was very meticulous with the window washing. I would definitely recommend him.",
-    date: "2 weeks ago",
+    date: "2026-05-25",
   },
   {
     name: "Julian Perez",
     rating: 5,
     text: "Did a great job on my house, very professional, definitely calling them back soon!",
-    date: "3 weeks ago",
+    date: "2026-05-18",
   },
   {
     name: "Gillian Clark",
     rating: 5,
     text: "Josh did a wonderful job with my windows today. He took a lot of care and they are now sparkling. Josh is very polite and communicates well. I highly recommend getting AllPro Exteriors to clean your windows.",
-    date: "1 month ago",
+    date: "2026-05-08",
   },
   {
     name: "Serena Negrich",
     rating: 5,
     text: "We had a great experience with AllPro Exteriors! He cleaned our windows and was very efficient with time! Great price for a great clean!",
-    date: "1 month ago",
+    date: "2026-05-08",
   },
   {
     name: "Garreth Rayner",
     rating: 5,
     text: "Very professional, done within a timely manner and made my windows look like a new pane of glass 🤩. Would highly recommend.",
-    date: "1 month ago",
+    date: "2026-05-08",
   },
   {
     name: "Arman Sidhu",
     rating: 5,
     text: "All Pro Exteriors did a great job on my interior and exterior windows. Super chill guys, showed up on time, worked clean, and my windows look crystal clear. Definitely recommend them.",
-    date: "1 month ago",
+    date: "2026-05-08",
   },
 ];
 

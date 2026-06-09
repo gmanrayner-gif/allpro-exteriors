@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { timeAgo } from "@/lib/content";
 import { REVIEWS, BUSINESS } from "@/lib/content";
 
 const GOOGLE_REVIEW_URL = "https://www.google.com/maps/place/AllPro+Exteriors/@51.0447,-114.0719,15z/data=!4m8!3m7!1s0x0:allproexteriors!8m2!3d51.0447!4d-114.0719!9m1!1b1";
@@ -33,7 +34,7 @@ function ReviewCard({ review, delay }: { review: typeof REVIEWS[0]; delay: numbe
         </div>
         <div className="flex-1 min-w-0">
           <div className="font-display font-semibold text-navy-900 text-sm">{review.name}</div>
-          <div className="text-slate-500 text-xs mt-0.5">{review.date}</div>
+          <div className="text-slate-500 text-xs mt-0.5">{timeAgo(review.date)}</div>
         </div>
         <div
           className="flex gap-0.5 flex-shrink-0"
