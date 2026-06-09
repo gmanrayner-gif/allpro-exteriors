@@ -122,13 +122,13 @@ export const REVIEWS = [
     name: "Cam Negrich",
     rating: 5,
     text: "AllPro Exteriors did an amazing job cleaning the windows on our house! Not a streak to be found! The price was extremely fair and actually less expensive than all of the other quotes we received! They performed the cleaning very quickly as well. Highly recommend!",
-    date: "2026-06-05",
+    date: "2026-06-04",
   },
   {
     name: "Kelly Negrich",
     rating: 5,
     text: "We used AllPro for our windows and we were impressed with the work done! It is clear that there is a level of pride in the work and customer service.",
-    date: "2026-06-05",
+    date: "2026-06-04",
   },
   {
     name: "Robert Craig",
@@ -146,7 +146,7 @@ export const REVIEWS = [
     name: "Julian Perez",
     rating: 5,
     text: "Did a great job on my house, very professional, definitely calling them back soon!",
-    date: "2026-05-18",
+    date: "2026-05-11",
   },
   {
     name: "Gillian Clark",
