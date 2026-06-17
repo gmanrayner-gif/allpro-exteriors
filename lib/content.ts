@@ -8,7 +8,7 @@ export const BUSINESS = {
   country: "Canada",
   postalCode: "T2P 0A1",
   rating: 5.0,
-  reviewCount: 13,
+  reviewCount: 19,
   hours: "Open 24 Hours",
   tagline: "Calgary's Trusted Window & Exterior Cleaning Pros",
   description:
