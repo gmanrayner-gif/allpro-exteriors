@@ -6,7 +6,7 @@ import { Star, Quote } from "lucide-react";
 import { timeAgo } from "@/lib/content";
 import { REVIEWS, BUSINESS } from "@/lib/content";
 
-const GOOGLE_REVIEW_URL = "https://www.google.com/maps/place/AllPro+Exteriors/@51.0447,-114.0719,15z/data=!4m8!3m7!1s0x0:allproexteriors!8m2!3d51.0447!4d-114.0719!9m1!1b1";
+const GOOGLE_REVIEW_URL = "https://maps.app.goo.gl/sxAtWD11yLGwwe2BA";
 import SectionHeading from "./SectionHeading";
 
 function ReviewCard({ review, delay }: { review: typeof REVIEWS[0]; delay: number }) {
